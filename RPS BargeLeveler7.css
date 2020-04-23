@@ -1,0 +1,11 @@
+.btn {
+    border-radius: 2em;
+    background-color:aliceblue;
+    align-items: center;
+    justify-content: center;
+}
+
+.winner {
+    color: green;
+    text-size-adjust: 1.1em;
+}
