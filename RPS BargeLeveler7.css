@@ -1,11 +1,91 @@
+body {
+	color: aliceblue;
+	margin: 0;
+	font-family: "Avenir";
+	background: #bbd2c5; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #536976, #bbd2c5); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(
+		to right,
+		#536976,
+		#bbd2c5
+	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+img {
+	height: 3em;
+}
+
+h3 {
+	height: 30px;
+}
+
+h2 {
+	height: 15px;
+}
+.topBanner {
+	text-align: center;
+	margin: 0;
+}
+
+.buttonsBanner {
+	height: 60px;
+	text-align: center;
+	width: 100%;
+}
+
 .btn {
-    border-radius: 2em;
-    background-color:aliceblue;
-    align-items: center;
-    justify-content: center;
+	border-radius: 2em;
+	background-color: aliceblue;
+	align-items: center;
+	justify-content: center;
+	margin: 5px 10px;
+	height: 50px;
+	width: 50px;
+	position: relative;
+}
+.buffer {
+	padding: 0 20%;
+}
+
+.btn:focus {
+	outline: none;
+}
+
+.btn:hover {
+	transform: scale(1.2);
+	border: 3px solid rgba(0, 0, 0, 0.1);
 }
 
 .winner {
-    color: green;
-    text-size-adjust: 1.1em;
+	color: rgb(143, 233, 143);
+	text-size-adjust: 1.1em;
+}
+.loser {
+	color: rgba(221, 111, 111, 0.75);
+	text-size-adjust: 0.78em;
+}
+.bestOfInput {
+	background-color: aliceblue;
+	border-radius: 5px;
+}
+.bestOfInput:hover {
+	border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.content {
+	text-align: center;
+	justify-content: center;
+	margin-top: 30px;
+}
+
+#computerPick {
+	transition: 0.2s linear;
+}
+#playerPick {
+	transition: 0.2s linear;
+}
+
+.totalRoundsHover {
+	font-size: 1.05em;
+	text-decoration: underline;
+	color: lightskyblue;
 }

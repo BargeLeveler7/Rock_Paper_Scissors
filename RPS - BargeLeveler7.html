@@ -4,20 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors</title>
-    <link rel="stylesheet" href="tictactoe.css">
+    <link rel="stylesheet" href="RPS BargeLeveler7.css">
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.1.3/howler.min.js"></script>
 </head>
 <body>
-    <h1 >Rock Paper Scissors - best of five!</h1>
-    <h2>Player: <span id = playerDisplay>0</span> - Computer: <span id = compDisplay>0</span></h2>
-    <button class="btn" id ="rock">Rock</button>
-    <button class="btn" id="paper">Paper</button>
-    <button class="btn" id="scissors">Scissors</button>
-    <button class="btn" id = "reset"><strong>RESET</strong></button>
+    
+    <div class="topBanner">
+        <h1><span id="rockTitle">Rock</span><span id="paperTitle"> Paper</span><span id="scissorsTitle"> Scissors!</span></h1>
+        <h2>Best of: <span id = "bestOf"></span><input class="bestOfInput" type="number" min="1"></h2>
+        <h3 id="whoWon">  </h3>      
+        <div class="buttonsBanner">
+            <button class="btn" id ="rock"><img src="favorites/rock.png" alt=""></button>
+            <button class="btn" id="paper"><img src="favorites/paper.png" alt=""></button>
+            <button class="btn" id="scissors"><img src="favorites/scissors.png" alt=""></button>
+            <button class="btn" id = "reset"><img src="favorites/reset.png" alt=""></button>
+        </div> 
+        <h2>Player: <span id = playerDisplay>0</span></span> <span class="buffer"></span> Computer: <span id = compDisplay>0</span></h2>
+    </div>
+    <div class="content">
+   
     <p id = playerPick>Pick your player!</p>
     <p id = computerPick>Can you beat the computer?</p>
-    <h3>  </h3>
+    
 <p id = gameResults>Enjoy the game!</p>
+</div>
 
-<script src="tictactoe.js"></script>
+
+<script src="RPS - BargeLeveler7.js"></script>
 </body>
 </html>
+
+<!-- Next steps:
+
+    A) The resultDisplay banner. After a game, when you reset, the un-hover effect stays. Why?
+
+1) Best of - 
+    i) hover effect adds a "?". how to remove it? the value is set within a function....
+    ii) input window should have only odd numbers
+2) Center things on CSS. 
+3) Animations added - how to define an end point? And make it quicker...
+4) Use JQuery - SlideToggle! Show your play and then the computer's
+5) Learn how to add a timer between functions.
+6) Animations?
+7) Sound? - try to use howler
+8) Proper use of GitHub... -->
